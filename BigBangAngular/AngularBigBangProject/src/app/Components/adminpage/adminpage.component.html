@@ -1,0 +1,61 @@
+<div class="whole-nav">
+
+    <div class="leftlogo">
+        <img src="../../../assets/hospital-final-logo.png" height="70px" width="110px" alt="">&nbsp;<span
+            style="font-size: 20px;font-weight: bolder;margin-top: 20px;"><span style="color: blue;">H</span>eaven
+            Life</span>
+    </div>
+    <div class="right-top" style="margin-top: 20px;">
+        <div>
+            <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span
+                    style="color: blue;">H</span>OME</span>&nbsp;&nbsp;
+            <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span
+                    style="color: blue;">A</span>BOUT</span>&nbsp;&nbsp;
+            <!-- <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span style="color: blue;">S</span>ERVICES</span>&nbsp;&nbsp; -->
+            <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span
+                    style="color: blue;">F</span>AQ</span>&nbsp;&nbsp;
+            <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span
+                    style="color: blue;">L</span>OGOUT</span>
+        </div>
+    </div>
+
+</div>
+
+<app-sidenav></app-sidenav>
+
+
+<div class="approval">
+    <h4 style="font-weight: bolder;margin-top: 10px;margin-left: 400px;">Approval List For Doctor</h4>
+
+   
+<table class="table" style="margin-top: 40px;">
+    <thead>
+        <tr>
+            <th >Doctor Name</th>
+            <th >Username</th>
+            <th >Role</th>
+            <th >Email</th>
+            <th>Password</th>
+            <th >Approve</th>
+            <th >Decline</th>
+        </tr>
+    </thead>
+    <tbody>
+ 
+        <tr *ngFor="let doctor of DDoctors">
+            <td >{{doctor.name}}</td>
+            <td >{{doctor.username}}</td>
+            <td >{{doctor.roles}}</td>
+            <td >{{doctor.email}}</td>
+            <td>{{doctor.password}}</td>
+
+            <td><button (click)="Add(doctor)">Approve</button></td>
+            <td><button (click)="del(doctor)">Decline</button></td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+    
+</div>

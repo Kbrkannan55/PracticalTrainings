@@ -1,0 +1,19 @@
+<div class="form">
+  <h2>Temperature Input</h2>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()" novalidate>
+    <div>
+      <label for="numVal">Temperature:</label>
+      <input type="text" id="numVal" name="numVal" formControlName="numVal">
+      <div *ngIf="!numVal?.['valid'] && (numVal?.['dirty'] || numVal?.['touched'])">
+        <div *ngIf="numVal?.errors?.['numberValidator']">
+          Please Input a number
+        </div>
+      </div>
+    </div>
+
+    <p>Is Form Valid : {{myForm.valid}} </p>
+
+
+    <button type="submit" [disabled]="!myForm.valid">Submit</button>
+  </form>
+</div>

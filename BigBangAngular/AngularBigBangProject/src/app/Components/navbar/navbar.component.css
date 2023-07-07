@@ -1,0 +1,14 @@
+.whole-nav{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    /* font-family: ui-sans-serif; */
+}
+
+.nav-hover:hover{
+color: red;
+transform: scale(1.1);
+transition: all linear .2s;
+}
+

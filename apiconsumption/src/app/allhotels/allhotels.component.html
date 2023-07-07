@@ -1,0 +1,21 @@
+<p>allhotels works!</p>
+<p>allstudents works!</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Pin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Hotel of HotelDetails">
+            <td>{{Hotel.hotelID}}</td>
+            <td>{{Hotel.hotelName}}</td>
+            <td>{{Hotel.hotelLocation}}</td>
+            <td>{{Hotel.amenities}}</td>
+        </tr>
+    </tbody>
+</table>

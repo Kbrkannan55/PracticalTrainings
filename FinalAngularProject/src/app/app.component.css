@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: GucciSans, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: red;
+    height: 70px;
+}
+
+.threelines {
+    transform: rotate(90deg);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto; 
+    /* background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%); */
+    
+    background-image: url(../assets/final-red.avif);
+    background-size: cover;
+}
+
+.top-logo {
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.right-top {
+    margin-top: 10px;
+    display: flex;
+    color: white;
+}
+
+/* .top-fixed-image{
+    width: 1000px;
+    height: 1000px;
+} */
+
+#caro1,#caro2,#caro3,#caro4{
+    height: 1300px; 
+}
+
+/* #carosuelitems{
+    background-image: url(../assets/background-img.jpg);
+} */
+
+
+
+
+
+

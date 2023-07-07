@@ -1,0 +1,13 @@
+.bgimg{
+    /* background-image: url(../../assets/Images/Pay.jpg); */
+    height: 500px;
+    width: 1200px;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#flex{
+    display: flex;
+    justify-content: center;
+}

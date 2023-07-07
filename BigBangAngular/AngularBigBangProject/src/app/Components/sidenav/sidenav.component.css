@@ -1,0 +1,15 @@
+.whole-nav{
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    font-family: ui-sans-serif;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    position: fixed;
+}
+
+
+.nav1{
+    margin-top: 30px;
+}

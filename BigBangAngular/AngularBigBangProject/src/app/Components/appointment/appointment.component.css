@@ -1,0 +1,75 @@
+.whole-nav{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    /* font-family: ui-sans-serif; */
+}
+
+.nav-hover:hover{
+color: red;
+transform: scale(1.1);
+transition: all linear .2s;
+}
+
+
+
+
+
+.patient-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .patient-form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .submit-button {
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+  
